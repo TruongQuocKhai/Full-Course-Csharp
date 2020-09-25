@@ -8,7 +8,7 @@ namespace Full_Course_Csharp
 {
     class Student
     {
-        private string name;
+        public string name;
         public string major;
         public double gpa;
 
@@ -19,6 +19,15 @@ namespace Full_Course_Csharp
             name = aName;
             major = aMajor;
             gpa = aGpa;
+        }
+
+        public bool hasHonors()
+        {
+            if (gpa >= 3.5)
+            {
+                return true;
+            }
+            return false;
         }
     }
 
