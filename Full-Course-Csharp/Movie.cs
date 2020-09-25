@@ -8,5 +8,8 @@ namespace Full_Course_Csharp
 {
     class Movie
     {
+        public string title;
+        public string director;
+        public string rating;
     }
 }
