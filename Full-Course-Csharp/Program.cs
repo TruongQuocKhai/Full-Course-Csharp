@@ -4,37 +4,16 @@ namespace Full_Course_Csharp
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) 
         {
-            string secretWord = "TruongKhai";
-            string guess = "";
-            int guessCount = 0;
-            int guessLimit = 3;
-            bool outOfGuess = true;
+            Student student1 = new Student("Kane", "Software Engineer", 2.5);
+            Student student2 = new Student("Cris", "Business", 2.8);
 
-            while (guess != secretWord && !outOfGuess)
-            {
-                if (guessCount < guessLimit)
-                {
-                    Console.Write("Enter guess: ");
-                    guess = Console.ReadLine();
-                    guessCount++;
-                }
-                else
-                {
-                    outOfGuess = true;
-                }
-            }
-            if (outOfGuess)
-            {
-                Console.WriteLine("You lose!");
-            }
-            else
-            {
-                Console.WriteLine("You win!");
-            }
+            Console.WriteLine(student1.major + "\n" + student1.name + "\n" + student1.gpa + "\n");
 
             Console.ReadLine();
         }
+
+        
     }
 }
